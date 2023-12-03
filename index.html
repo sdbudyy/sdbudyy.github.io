@@ -56,8 +56,9 @@
         footer {
             text-align: center;
             padding: 1em 0;
-            background-color:darkslategray;
+            background-color: darkslategray;
             color: white;
+            margin-top: auto;
         }
 
         .div-img{
@@ -78,6 +79,33 @@
     img:hover{
     transform:scale(1.2065);
     }
+
+    @media only screen and (min-width: 600px) {
+            .hero {
+                padding: 4em 1em;
+            }
+            .hero h1 {
+                font-size: 3em;
+            }
+            .hero p {
+                font-size: 1.5em;
+            }
+            .features {
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: stretch;
+            }
+            .feature {
+                margin-bottom: 0;
+            }
+            .feature img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -89,31 +117,33 @@
     <div class="hero">
         <h1>Welcome to My Personal Website</h1>
         <h2>Who Am I?</h2>
-        <h3 align ="center" style="color: darkslategray; font-size: 20px; padding-left: 38px;padding-right: 38px;">  My name is Shaurya Dave and I am in high school. Outside of my school and philanthropic pursuits, I find solace and inspiration in various hobbies and interests. I am an avid reader, constantly seeking out thought-provoking literature across genres. I also have a passion for exploring nature, finding solace in hiking, sports, and immersing myself in the beauty of the great outdoors. I wanted to create this website to share my experiences and work to the world.</h3>
+        <h3 align ="center" style="color: darkslategray; font-size: 20px; padding-left: 38px;padding-right: 38px;">  My name is Shaurya Dave, and I am in high school. Outside of school and philanthropic pursuits, I find solace and inspiration in various hobbies and interests. I am an avid reader, constantly seeking out thought-provoking literature across genres. I also have a passion for exploring nature, finding solace in hiking sports, and immersing myself in the beauty of the great outdoors. I wanted to create this website to share my experiences and work with the world.
+        </h3>
     </div>
     <div class="features">
         <div class="feature">
             <a href="page2.html"><img src="people-arrows-solid.svg" alt="Quality 1"></a>
-            <a href="page2.html" style="text-decoration: none; color: black;"> <h2>Charisma Cource</h2></a>
-            <p>Inspiring Others</p>
+            <a href="page2.html" style="text-decoration: none; color: black;"> <h2>Charisma Course</h2></a>
+            <p id="FirstLink">Inspiring Others</p>
         </div>
+
         <div class="feature">
             <a href="page3.html"> <img style=": 20px;" src="bike.png" alt="Quality 2"> </a>
             <a href="page3.html" style="text-decoration: none; color: black;"> <h2>Bikeathon</h2></a>
-            <p>Community Outreach</p>
+            <p id="FirstLink">Community Outreach</p>
         </div>
         <div class="feature">
             <a href="projects.html"><img src="hammer-solid.svg" alt="Quality 3"></a>
             <a href="page3.html" style="text-decoration: none; color: black;"><h2>Projects</h2></a>
-            <p>Personal Projects</p>
+            <p id="FirstLink">Personal Projects</p>
         </div>
         <div class="feature">
             <a href="Volunteer.html"><img src="seedling-solid.svg" alt="Quality 3"></a>
             <a href="Volunteer.html" style="text-decoration: none; color: black;"><h2>Volunteering</h2></a>
-            <p>Helping the Community</p>
+            <p id="FirstLink">Helping the Community</p>
         </div>
     </div>
-    <footer>
+    <footer style="height:max-content;">
         <p>&copy; 2023 Shaurya Dave. All rights reserved.</p>
     </footer>
 </body>
