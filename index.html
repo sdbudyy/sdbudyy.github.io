@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color:darkslategray;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color:darkslategray;;
+            padding: 0.5em 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        .hero {
+            text-align: center;
+            padding: 4em 0;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        .hero p {
+            font-size: 1.5em;
+            color: #666;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 3em 0;
+        }
+        .feature {
+            text-align: center;
+        }
+        .feature img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1em;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: darkslategray;
+            color: white;
+            margin-top: auto;
+        }
+
+        .div-img{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    padding-top:20%;
+        }
+
+    img{
+    transition: transform .2s;
+    width:50px;
+    height:50px;
+    margin:0 auto;
+
+    }
+
+    img:hover{
+    transform:scale(1.2065);
+    }
+
+    @media only screen and (min-width: 600px) {
+            .hero {
+                padding: 4em 1em;
+            }
+            .hero h1 {
+                font-size: 3em;
+            }
+            .hero p {
+                font-size: 1.5em;
+            }
+            .features {
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: stretch;
+            }
+            .feature {
+                margin-bottom: 0;
+            }
+            .feature img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shaurya Dave</h1>
+        <p>Problem Solver &amp; Creative Thinker</p>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to My Personal Website</h1>
+        <h2>Who Am I?</h2>
+        <h3 align ="center" style="color: darkslategray; font-size: 20px; padding-left: 38px;padding-right: 38px;">  My name is Shaurya Dave, and I am in high school. Outside of school and philanthropic pursuits, I find solace and inspiration in various hobbies and interests. I am an avid reader, constantly seeking out thought-provoking literature across genres. I also have a passion for exploring nature, finding solace in hiking sports, and immersing myself in the beauty of the great outdoors. I wanted to create this website to share my experiences and work with the world.
+        </h3>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <a href="page2.html"><img src="people-arrows-solid.svg" alt="Quality 1"></a>
+            <a href="page2.html" style="text-decoration: none; color: black;"> <h2>Charisma Course</h2></a>
+            <p id="FirstLink">Inspiring Others</p>
+        </div>
+
+        <div class="feature">
+            <a href="page3.html"> <img style=": 20px;" src="bike.png" alt="Quality 2"> </a>
+            <a href="page3.html" style="text-decoration: none; color: black;"> <h2>Bikeathon</h2></a>
+            <p id="FirstLink">Community Outreach</p>
+        </div>
+        <div class="feature">
+            <a href="projects.html"><img src="hammer-solid.svg" alt="Quality 3"></a>
+            <a href="page3.html" style="text-decoration: none; color: black;"><h2>Projects</h2></a>
+            <p id="FirstLink">Personal Projects</p>
+        </div>
+        <div class="feature">
+            <a href="Podcast.html"><img src="883039.png" alt="Quality 4"></a>
+            <a href="Podcast.html" style="text-decoration: none; color: black;"> <h2>Podcast</h2></a>
+            <p id="FirstLink">Mental Health Podcast</p>
+        </div>
+        <div class="feature">
+            <a href="Acomplishments.html"><img src="seedling-solid.svg" alt="Quality 5"></a>
+            <a href="Acomplishments.html" style="text-decoration: none; color: black;"><h2>Acomplishments</h2></a>
+            <p id="FirstLink">Achievements Attained</p>
+        </div>
+    </div>
+    <footer style="height:max-content;">
+        <p>&copy; 2023 Shaurya Dave. All rights reserved.</p>
+    </footer>
+</body>
+</html>
