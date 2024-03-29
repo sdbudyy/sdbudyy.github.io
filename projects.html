@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      position: relative;
+      height: auto;
+    }
+
+
+
+    .image-container {
+      position: relative;
+      width: 300px; /* Adjust the width of the image container */
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .enlarge-image:hover {
+      transform: scale(1.2); /* Adjust the scale factor to control the enlargement */
+    }
+
+    .enlarge-image {
+      width: 100%;
+      height: auto;
+    }
+
+    #particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .particle {
+      position: absolute;
+      background-color: #f00;
+      border-radius: 50%;
+      pointer-events: none;
+      box-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00, 0 0 40px #f00, 0 0 50px #f00, 0 0 75px #f00;
+      animation: pulse 2s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+      50% {
+        transform: scale(1.5);
+        opacity: 0.2;
+      }
+    }
+
+    .content-left {
+      position: absolute;
+      top: 48%;
+      left: 11.5%;
+      transform: translateY(-50%);
+      text-align: left;
+      z-index: 1;
+    }
+
+    .content-right {
+      position: absolute;
+      top: 50%;
+      right: 20%;
+      transform: translateY(-50%);
+      text-align: right;
+      z-index: 1;
+      height: 70%;
+      overflow-y: auto;
+      padding-right: 30px;
+    }
+
+
+
+    .creative-button {
+      position: absolute;
+            top: 10px;
+            left: 8px;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: rgb(26, 24, 24);
+            color: whitesmoke;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s, background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .creative-button::before {
+            content: "";
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            background-color: rgba(255, 0, 0, 0);
+            border-radius: 50%;
+            transform: scale(0);
+            transition: transform 0.5s, opacity 0.5s;
+            opacity: 0;
+        }
+
+        .creative-button:hover {
+            background-color: #f00;
+            transform: scale(1.1);
+        }
+
+        .creative-button:hover::before {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+      
+        .content-right::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .content-right::-webkit-scrollbar-thumb {
+      background-color: red;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      box-shadow: 0 0 10px red, 0 0 20px red;
+    }
+
+    .content-right::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+  </style>
+
+   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const numParticles = 150;
+      const particleContainer = document.getElementById('particles');
+
+      for (let i = 0; i < numParticles; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        particle.style.width = `${Math.random() * 10 + 2}px`;
+        particle.style.height = particle.style.width;
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.top = `${Math.random() * 100}%`;
+        particle.style.animationDuration = `${Math.random() * 1 + 0.5}s`;
+        particle.style.animationDelay = `${Math.random() * 2}s`;
+        particleContainer.appendChild(particle);
+      }
+    });
+  </script>
+</head>
+<body>
+
+
+
+  <div id="particles"></div>
+  
+  <div class="content-left">
+    <h1>Projects</h1>
+    <p>By: Shaurya Dave</p>
+    <a href="index.html" style=";" class="creative-button" title="Home Page">Home</a>
+  </div>
+
+
+<div class="content-right">
+
+
+  <h1 align = "center">CO₂ Filter</h1>
+    <p align = "center" style="font-size:15px; height: 0%;": 0.1px;">Age: 12</p>
+    <a href="CO2 Filter Blueprint.pdf" style="color: whitesmoke; font-size: large;" target="_blank" title="Blueprints">
+      Blueprint
+  </a>
+<h1> </h1>
+  <a href="CO2 Filter.pdf" style="color: whitesmoke; font-size: large;" target="_blank" title="Miscellaneous">
+      Miscellaneous 
+  </a>
+<br>
+<br>
+<hr> 
+<br>
+    
+  
+  <h1 align = "center">Smart Glasses</h1>
+    <p align = "center" style="font-size:15px; height: 0%;": 0.1px;">Age: 12</p>
+    <a href="Smart Glasses Blueprint.pdf" style="color: whitesmoke; font-size: large;" target="_blank" title="Blueprints">
+      Blueprint
+  </a>
+<h1> </h1>
+  <a href="Smart Glasses.pdf" style="color: whitesmoke; font-size: large;" target="_blank" title="Miscellaneous">
+      Miscellaneous 
+  </a>
+<br>
+<br>
+<hr> 
+<br>
+<h1 align = "center">Mech A</h1>
+<p align = "center" style="font-size:15px; height: 0%;": 0.1px;">Age: 13</p>
+<a href="Mech A Blueprint.pdf" style="color: whitesmoke; font-size: large;" target="_blank" title="Blueprints">
+  Blueprint
+</a>
+<h1> </h1>
+<a href="Mech A.pdf" style="color: whitesmoke; font-size: large;" target="_blank" title="Miscellaneous">
+  Miscellaneous 
+</a>
+<br>
+<br>
+<hr> 
+<br>
+
+  <h1>Automatic Waterbowl Filler</h1>
+    <p align ="center" style="font-size:15px; height: 0%;": 0.1px;">Age: 16</p>
+
+    <a href="Automatic WaterBowl Filler.jpg" style="color: whitesmoke; font-size: large;" target="_blank" title="Blueprints">
+        Blueprint
+    </a>
+<h1> </h1>
+    <a href="Automated Water Bowl Filler.pdf" style="color: whitesmoke; font-size: large;" title="Miscellaneous" target="_blank">
+        Miscellaneous 
+    </a>
+
+    <br>
+<br>
+<hr> 
+<br>
+
+  <h1 align ="center">Smart Greenhouse </h1>
+    <p align ="center" style="font-size:15px; height: 0%;": 0.1px;">Age: 17</p>
+
+    <a href="Smart Greenhouse Blueprint.pdf" style="color: whitesmoke; font-size: large;" target="_blank" title="Blueprints">
+        Blueprint
+    </a>
+<h1> </h1>
+    <a href="Smart Greenhouse Project.pdf" style="color: whitesmoke; font-size: large;" title="Miscellaneous" target="_blank">
+        Miscellaneous 
+    </a>
+    
+
+</div>
+
+</body>
+</html>
